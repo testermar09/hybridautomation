@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.MyTestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Login validation Tests(failed)">
+    <classes>
+      <class name="testcases.ToVerifyValidLoginDetails">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="setUp"/>
+          <include name="flushReports"/>
+          <include name="teardown"/>
+          <include name="toVerifyValidLoginDetailsTest"/>
+        </methods>
+      </class> <!-- testcases.ToVerifyValidLoginDetails -->
+    </classes>
+  </test> <!-- Login validation Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->
